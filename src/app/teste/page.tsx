@@ -1,4 +1,3 @@
-import TextFaq from "../../components/TextFaq"
 import React from 'react';
 import SocialIcons from '../../components/SocialIcons';
 
