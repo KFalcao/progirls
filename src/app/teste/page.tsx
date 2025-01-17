@@ -1,12 +1,16 @@
 import Header from '../../components/Header/header'
 import TextFaq from "../../components/TextFaq"
+import Footer from "../../components/Footer/footer";
+
+
 
 const Teste: React.FC = () => {
   return (
     <>
       <Header/>
-      <h1>Home Page Teste</h1>
-      <TextFaq />
+      
+    
+      <Footer/>
     /</>
   );
 };
