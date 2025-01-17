@@ -37,5 +37,5 @@ li{
   @apply bg-foreground text-gray-600	p-10;
 }
 .lista{
-  @apply flex-shrink-0;
+  @apply flex-shrink-0 flex-col;
 }

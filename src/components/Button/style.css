@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .junteSe{
-    @apply bg-foreground text-background w-36 h-10 rounded
+    @apply bg-foreground text-background w-36 h-10 rounded mt-1 hover:bg-slate-800
 }

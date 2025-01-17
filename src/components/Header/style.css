@@ -11,11 +11,9 @@ header{
 }
 
 .navegacao{
-    @apply px-14 py-6 flex justify-between border-t-2 border-foreground;
+    @apply px-14 mt-2 flex justify-between;
 }
 .paginas{
-   @apply w-2/4 pt-2
+   @apply pt-2;
 }
-ul{
-    @apply flex justify-around align-middle
-}
+

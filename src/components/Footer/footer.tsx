@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./style.css";
 export default function Footer() {
   return (
-    <footer>
+    <footer className="w-full overflow-x-hidden overflow-y-hidden fixed bottom-0">
       <section className="faixa"></section>
       <div className="container mx-auto">
         <section className="itens">
@@ -23,11 +23,13 @@ export default function Footer() {
             </div>
           </section>
           <div className="flex items-center justify-end">
-            <nav className="navegacao gap-12">
+            <nav className="gap-12">
               <ul className="sobre lista">
                 <li className="mb-5">
                   <span>Sobre Nós</span>
                 </li>
+                <li>Sobre Nós</li>
+                <li>Sobre Nós</li>
               </ul>
               <ul className="recursos lista">
                 <li className="mb-5">

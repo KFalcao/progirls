@@ -5,7 +5,7 @@ import './style.css';
 const Button = () => {
     return(
         <Link href="/contato">
-        <button className="junteSe">Comece Agora</button>
+        <button className="junteSe">Junte-se</button>
     </Link>
     )
 }
