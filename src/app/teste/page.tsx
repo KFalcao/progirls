@@ -32,7 +32,7 @@ const Teste: React.FC = () => {
 
             <Text className="mb-[69px]">
               Mais de <span className="text-emphasis">250+</span> mulheres
-              programadoras confiando na ProGurls.
+              programadoras confiando na ProGirls.
             </Text>
 
             <SocialIcons />
