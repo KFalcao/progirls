@@ -1,13 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-header{
-    @apply border-2 border-foreground;
-}
-.destaque{
-    @apply pt-10 bg-emphasis;
+.destaque {
+  @apply pt-10 bg-emphasis;
 }
 
 .navegacao{
