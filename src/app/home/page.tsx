@@ -1,7 +1,7 @@
-import Header from "../../components/Header/header";
-import TextFaq from "../../components/TextFaq";
+import Header from "@/components/Header/header";
+import TextFaq from "@/components/TextFaq";
 import React from "react";
-import SocialIcons from "../../components/SocialIcons";
+import SocialIcons from "@/components/Icons/SocialIcons";
 import Text from "@/components/TextComponent";
 import Button from "@/components/Button";
 import { Image } from "@/components/Image";

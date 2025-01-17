@@ -5,9 +5,9 @@ import Button from "../Button/button";
 
 export default function header() {
   return (
-    <header className="w-full">
+    <header className="w-full border-b border-black">
       <div className="destaque"></div>
-      <section className="navegacao flex justify-items-center overflow-x-hidden ">
+      <section className="navegacao flex justify-items-center overflow-x-hidden">
       <div className="min-w-[150px] md:min-w-[100px] flex-shrink-0">
     <Link href="/">
         <Image 
