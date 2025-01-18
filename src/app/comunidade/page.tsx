@@ -1,4 +1,15 @@
-import MemberCard from "@/components/member-card";
+import MemberCard, { Member } from "@/components/member-card";
+
+const member: Member = {
+  name: "Fufu da Silva",
+  city: "RJ",
+  image: "/foto.png",
+  link_linkedin: "https://www.linkedin.com/???????????????????????",
+  link_github: "https://github.com/???????????????????????",
+  link_perfil: "???????????????????????",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+};
 
 export default function comunidade() {
   return (
@@ -12,7 +23,9 @@ export default function comunidade() {
         </p>
       </div>
 
-      <MemberCard />
+      <div className="container mx-auto">
+        <MemberCard {...member} />
+      </div>
 
       <div className="p-6 justify-end grid grid-rows-2">
         <p className="uppercase">leia abaixo</p>
