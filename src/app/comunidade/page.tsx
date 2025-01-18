@@ -11,11 +11,13 @@ const member: Member = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };
 
+const members: Member[] = Array.from({ length: 3 * 3 }, () => member);
+
 export default function comunidade() {
   return (
     <section>
       <div className="mx-20 mt-9 p-5">
-        <hr className="flex  border-black border-t" />
+        <hr className="flex border-black border-t" />
         <p className="mt-9 text-6xl">
           Encontre as Profissionais que <br />
           <span className="text-emphasis font-normal">Transformam</span> a
@@ -23,8 +25,10 @@ export default function comunidade() {
         </p>
       </div>
 
-      <div className="container mx-auto">
-        <MemberCard {...member} />
+      <div className="container mx-auto flex flex-wrap gap-16">
+        {members.map((member, index) => (
+          <MemberCard {...member} key={index} className="w-1/3" />
+        ))}
       </div>
 
       <div className="p-6 justify-end grid grid-rows-2">

@@ -1,9 +1,10 @@
 import { Image } from "../Image";
-import { TiSocialGithub, TiSocialLinkedin } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 import { SocialIcon } from "../social-icon";
 import { MdPerson2 } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import Link from "next/link";
+import clsx from "clsx";
 
 export type Member = {
   name: string;
@@ -13,6 +14,7 @@ export type Member = {
   link_linkedin: string;
   link_github: string;
   link_perfil: string;
+  className?: ClassName;
 };
 
 type MemberCardProps = Readonly<Member>;
@@ -25,9 +27,17 @@ export default function MemberCard({
   link_linkedin,
   link_github,
   link_perfil,
+  className,
 }: MemberCardProps) {
   return (
-    <article className="relative flex flex-col max-w-96 p-8 rounded-2xl shadow-2xl gap-7 overflow-hidden">
+    <article
+      className={clsx(
+        "relative flex flex-col max-w-96 p-8 rounded-2xl shadow-xl gap-7 overflow-hidden",
+        "transition-all duration-300 ease-in-out",
+        "hover:shadow-2xl hover:scale-[1.01]",
+        className
+      )}
+    >
       <h3 className="text-5xl font-bold">
         {name} <br /> | {city}
       </h3>
