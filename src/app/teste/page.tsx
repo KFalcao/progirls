@@ -9,8 +9,6 @@ import { Image } from "@/components/Image";
 const Teste: React.FC = () => {
   return (
     <div>
-      <Header />
-
       <div className="flex">
         <div className="w-[60%] py-[80px]">
           <div className="flex flex-col align-center max-w-[690px] mx-auto">

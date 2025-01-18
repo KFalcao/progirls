@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./style.css";
 export default function Footer() {
   return (
-    <footer className="w-full overflow-x-hidden overflow-y-hidden fixed bottom-0">
+    <footer className="w-full overflow-x-hidden overflow-y-hidden bottom-0">
       <section className="faixa"></section>
       <div className="container mx-auto">
         <section className="itens">
