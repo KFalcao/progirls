@@ -25,9 +25,9 @@ export default function comunidade() {
         </p>
       </div>
 
-      <div className="container mx-auto flex flex-wrap gap-16">
+      <div className="container mx-auto flex flex-wrap gap-20 justify-center">
         {members.map((member, index) => (
-          <MemberCard {...member} key={index} className="w-1/3" />
+          <MemberCard {...member} key={index} className="md:w-1/3 w-full" />
         ))}
       </div>
 
