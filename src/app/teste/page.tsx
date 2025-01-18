@@ -4,7 +4,7 @@ import React from "react";
 import SocialIcons from "@/components/Icons/SocialIcons";
 import Text from "@/components/TextComponent";
 import Button from "@/components/Button";
-import { Image } from "@/components/Image";
+import { Image } from "@/components/image";
 
 const Teste: React.FC = () => {
   return (

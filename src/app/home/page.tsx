@@ -2,7 +2,7 @@ import TextFaq from "@/components/TextFaq";
 import React from "react";
 import Text from "@/components/TextComponent";
 import Button from "@/components/Button";
-import { Image } from "@/components/Image";
+import { Image } from "@/components/image";
 import { SocialIcon } from "@/components/social-icon";
 import {
   TiSocialGithub,

@@ -1,10 +1,11 @@
-import { Image } from "../Image";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { SocialIcon } from "../social-icon";
-import { MdPerson2 } from "react-icons/md";
-import { FiGithub } from "react-icons/fi";
-import Link from "next/link";
+import { Text } from "@/components/text";
 import clsx from "clsx";
+import Link from "next/link";
+import { FiGithub } from "react-icons/fi";
+import { MdPerson2 } from "react-icons/md";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { Image } from "@/components/image";
+import { SocialIcon } from "@/components/social-icon";
 
 export type Member = {
   name: string;
@@ -59,7 +60,7 @@ export default function MemberCard({
         className="rounded-full mx-auto"
       />
 
-      <p className="">{description}</p>
+      <Text>{description}</Text>
 
       <div className="flex gap-4 justify-center">
         <Link href={link_linkedin}>

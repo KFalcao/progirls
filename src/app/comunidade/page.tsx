@@ -13,7 +13,7 @@ const member: Member = {
 
 const members: Member[] = Array.from({ length: 3 * 3 }, () => member);
 
-export default function comunidade() {
+export default function Comunidade() {
   return (
     <section>
       <div className="mx-20 mt-9 p-5">
