@@ -1,7 +1,7 @@
 import TextFaq from "@/components/TextFaq";
 import React from "react";
-import Text from "@/components/TextComponent";
-import Button from "@/components/Button";
+import { Text } from "@/components/text";
+import Button from "@/components/button";
 import { Image } from "@/components/image";
 import { SocialIcon } from "@/components/social-icon";
 import {
