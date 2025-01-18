@@ -1,5 +1,10 @@
-import "./index.css";
+import clsx from "clsx";
 
-export const Text = () => {
-  return <p className="text">oi</p>;
+type TextProps = {
+  children: React.ReactNode;
+  className?: ClassName;
+};
+
+export const Text = ({ children, className }: TextProps) => {
+  return <p className={clsx("text-base", className)}>{children}</p>;
 };

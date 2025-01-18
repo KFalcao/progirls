@@ -1,8 +1,10 @@
 import { Inter, Montserrat } from "next/font/google";
 
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import clsx from "clsx";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -26,8 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${montserrat.variable} ${inter.variable} antialiased`}>
+      <body
+        className={clsx(montserrat.variable, inter.variable, "antialiased")}
+      >
+        <Header />
+
         {children}
+
+        <Footer />
       </body>
     </html>
   );

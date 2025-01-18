@@ -1,16 +1,20 @@
-import Header from "@/components/Header/header";
 import TextFaq from "@/components/TextFaq";
 import React from "react";
-import SocialIcons from "@/components/Icons/SocialIcons";
-import Text from "@/components/TextComponent";
-import Button from "@/components/Button";
-import { Image } from "@/components/Image";
+import { Text } from "@/components/text";
+import Button from "@/components/button";
+import { Image } from "@/components/image";
+import { SocialIcon } from "@/components/social-icon";
+import {
+  TiSocialGithub,
+  TiSocialInstagram,
+  TiSocialLinkedin,
+  TiSocialYoutube,
+} from "react-icons/ti";
+import Link from "next/link";
 
 const Teste: React.FC = () => {
   return (
     <div>
-      <Header />
-
       <div className="flex">
         <div className="w-[60%] py-[80px]">
           <div className="flex flex-col align-center max-w-[690px] mx-auto">
@@ -35,7 +39,31 @@ const Teste: React.FC = () => {
               programadoras confiando na ProGurls.
             </Text>
 
-            <SocialIcons />
+            <div className="flex gap-2 justify-center">
+              <Link href="https://www.linkedin.com/???????????????????????">
+                <SocialIcon>
+                  <TiSocialLinkedin size={30} />
+                </SocialIcon>
+              </Link>
+
+              <Link href="https://github.com/Programmer-Girls">
+                <SocialIcon>
+                  <TiSocialGithub size={30} />
+                </SocialIcon>
+              </Link>
+
+              <Link href="https://www.instagram.com/comunidade_progirls/">
+                <SocialIcon>
+                  <TiSocialInstagram size={30} />
+                </SocialIcon>
+              </Link>
+
+              <Link href="https://www.youtube.com/????????????????????">
+                <SocialIcon>
+                  <TiSocialYoutube size={30} />
+                </SocialIcon>
+              </Link>
+            </div>
 
             <hr className="border-pink mx-auto w-[60%] mt-[69px]" />
           </div>
